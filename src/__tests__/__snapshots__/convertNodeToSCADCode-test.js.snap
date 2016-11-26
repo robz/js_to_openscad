@@ -1,0 +1,21 @@
+exports[`convertNodeToSCADCode does stuff 1`] = `
+"rotate([0, 15, 0])
+difference() {
+  hull() {
+    sphere(r = 0.6);
+
+    translate([0.5, 0, 0])
+    sphere(r = 0.3);
+  }
+
+  union() {
+    translate([0, -0.5, 0])
+    translate([0.2, 0, 0.2])
+    sphere(r = 0.11);
+
+    translate([0, 0.5, 0])
+    translate([0.2, 0, 0.2])
+    sphere(r = 0.11);
+  }
+}"
+`;
